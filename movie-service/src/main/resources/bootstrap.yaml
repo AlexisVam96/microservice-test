@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_springboot_ventas
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+
+#spring.datasource.url=jdbc:mysql://localhost:3306/db_springboot_ventas?useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+
+#spring.datasource.username=root
+#spring.datasource.password=root
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+#spring.jpa.database-platform=org.hibernate.dialect.MySQL57Dialect
+
+#spring.jpa.hibernate.ddl-auto=create-drop
+#logging.level.org.hibernate.SQL=debug

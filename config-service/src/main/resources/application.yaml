@@ -1,0 +1,13 @@
+
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/AlexisVam96/microservice-test
+          search-path: config-data
+  application:
+    name: config-service
