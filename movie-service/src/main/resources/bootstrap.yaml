@@ -1,12 +1,12 @@
 spring:
   application:
-    name: user-service
+    name: movie-service
   cloud:
     config:
       enabled: true
       uri: http://localhost:8081
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_springboot_ventas
     username: root
     password: root
