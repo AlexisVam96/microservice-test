@@ -39,7 +39,7 @@ public class UserService {
     }
 
     public List<Movie> getMovies(int userId){
-        List<Movie> movies = restTemplate.getForObject("http://localhost:8082/movie/byUser/" + userId, List.class);
+        List<Movie> movies = restTemplate.getForObject("http://movie-service/movie/byUser/" + userId, List.class);
         return movies;
     }
 

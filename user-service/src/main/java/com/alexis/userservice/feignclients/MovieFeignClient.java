@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "movie-service", url = "http://localhost:8082")
+@FeignClient(name = "movie-service", url = "http://localhost:8002")
 @RequestMapping("/movie")
 public interface  MovieFeignClient {
 
